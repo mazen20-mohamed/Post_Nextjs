@@ -1,0 +1,114 @@
+$primary-color: white;
+$navbar-color:  #f880c6;
+$user_photo_width: 4rem;
+$user_photo_height: 4rem;
+$post_photo_width:400px;
+$post_photo_height:400px;
+$border-radius: 12px;
+$blue_heart:blue;
+
+:export{
+    blue_heart: $blue_heart;
+    navbar_color:$navbar-color;
+}
+
+.grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    height: 100%;
+}
+
+.post_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.post_header span{
+    color: blue;
+    margin-left: 10px;
+}
+
+.post_img{
+    height: 30rem;
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.post_img img{
+    width: 100%;
+    height:95%;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 0.6px soild rgba($color: #1f1d1d, $alpha: 0.516);   
+}
+
+
+.title{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    margin: 400px 220px 0px 0px;
+    height: fit-content;
+}
+.price{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    color: white;
+    margin: 420px 280px 0px 0px;
+}
+.footer{
+    padding: 10px;
+}
+
+.bottom{
+    width:100%;
+    background-color: #f880c6; 
+}
+
+.favorite{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    font-size: 30px;
+    color: white;
+    margin: 410px 0px 0px 350px;
+}
+
+.favorite:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* Mobile */
+@media (max-width:700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+
+}
